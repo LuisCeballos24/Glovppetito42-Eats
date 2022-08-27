@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userEmail, userPassword;
     int type;
-    MediaPlayer click, music;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,15 +33,8 @@ public class LoginActivity extends AppCompatActivity {
 
         userEmail = (EditText) findViewById(R.id.email);
         userPassword = (EditText) findViewById(R.id.password);
-        music.start();
 
-        verifyUserSession();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        music.start();
+        //verifyUserSession();
     }
 
     private void verifyUserSession() {
@@ -52,7 +44,6 @@ public class LoginActivity extends AppCompatActivity {
 
     public void performUserLogin(View v) {
         try {
-            click.start();
             String user = userEmail.getText().toString();
             String pass = userPassword.getText().toString();
             RequestUser request = new RequestUser();
@@ -97,20 +88,13 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     public void registerUser(View v) {
-        click.start();
         Intent i = new Intent(getApplicationContext(), RegisterActivity.class);
         i.putExtra("num", 1);
         startActivity(i);
     }
 
     public void recoverUserPassword(View view) {
-        click.start();
         startActivity(new Intent(getApplicationContext(), PasswordRecoveryActivity.class));
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-        music.pause();
-    }
 }

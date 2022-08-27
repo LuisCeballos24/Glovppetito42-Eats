@@ -5,6 +5,7 @@
 
     <application
         android:allowBackup="true"
+        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +18,7 @@
             android:name="ui.bar.navigation.NavigationBarUI"
             android:exported="false"
             android:label="@string/title_activity_nav_bar"
-            android:theme="@style/Theme.Rubit.NoActionBar" />
+            android:theme="@style/Theme.Glovppetito42Eats.NoActionBar" />
         <activity
             android:name="ui.loading.LoadingUI"
             android:exported="true">
