@@ -1,10 +1,10 @@
-package gg.rubit.components.auth;
+package components.auth;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import gg.rubit.R;
+import com.example.glovppetito42eats.R;
 
 public class PasswordRecoveryActivity extends AppCompatActivity {
 

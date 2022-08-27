@@ -1,10 +1,15 @@
-package gg.rubit.api.request;
+package api.request;
 
+
+import java.util.List;
+
+import gg.rubit.api.response.Partida;
 
 public class RequestGame {
 
     private String nombre;
     private int puntaje;
+    private List<Partida> detalle;
 
 
     public String getNombre() {
@@ -23,4 +28,12 @@ public class RequestGame {
         this.puntaje = puntaje;
     }
 
+    public List<Partida> getDetalle() {
+        return detalle;
+    }
+
+    public void setDetalle(List<Partida> detalle) {
+        this.detalle = detalle;
+
+    }
 }

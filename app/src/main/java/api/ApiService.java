@@ -1,9 +1,10 @@
-package gg.rubit.api;
+package api;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
 
 public class ApiService {
 
@@ -17,7 +18,7 @@ public class ApiService {
         httpClient.addInterceptor(logging);
 
         if (API_SERVICE == null) {
-            Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.122:8000/").addConverterFactory(GsonConverterFactory.create()).client(httpClient.build()).build();
+            Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.0.14:8000/").addConverterFactory(GsonConverterFactory.create()).client(httpClient.build()).build();
             API_SERVICE = retrofit.create(ApiInterface.class);
         }
 

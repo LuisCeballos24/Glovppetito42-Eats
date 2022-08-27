@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ui.bar.progress.ProgressBarUI"
+    android:background="@color/MoradoFondo"
+    >
+    <ImageView
+        android:id="@+id/animation"
+        android:layout_width="340dp"
+        android:layout_height="25dp"
+        android:src="@drawable/progressbar_animation"
+        android:layout_marginVertical="40dp"
+        android:layout_centerHorizontal="true"
+
+        />
+    <ProgressBar
+        android:id="@+id/pgBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="340dp"
+        android:layout_height="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="40dp"
+        android:max="100"
+        android:progressDrawable="@drawable/progressbar_ajustes"
+        />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Aumentar"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/MoradoInput"
+        android:textColor="#FFFFFF"
+        />
+</RelativeLayout>

@@ -1,4 +1,4 @@
-package gg.rubit.api.response;
+package api.response;
 
 public class UserResponse {
 
@@ -15,6 +15,7 @@ public class UserResponse {
     private String edad;
     private String last_Login;
     private String correo;
+    private int puntajeac;
 
     public int getId() {
         return id;
@@ -118,5 +119,13 @@ public class UserResponse {
 
     public void setCorreo(String correo) {
         this.correo = correo;
+    }
+
+    public int getPuntajeac() {
+        return puntajeac;
+    }
+
+    public void setPuntajeac(int puntajeac) {
+        this.puntajeac = puntajeac;
     }
 }

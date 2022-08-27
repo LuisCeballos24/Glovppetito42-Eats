@@ -14,7 +14,12 @@
         android:theme="@style/Theme.Glovppetito42Eats"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="ui.bar.navigation.NavigationBarUI"
+            android:exported="false"
+            android:label="@string/title_activity_nav_bar"
+            android:theme="@style/Theme.Rubit.NoActionBar" />
+        <activity
+            android:name="ui.loading.LoadingUI"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +27,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="ui.help.HelpUI" />
+        <activity android:name="components.auth.AuthMessageActivity" />
+        <activity android:name="components.auth.RegisterActivity" />
+        <activity android:name="components.auth.PasswordRecoveryActivity" />
+        <activity android:name="components.auth.LoginActivity" />
+        <activity android:name="components.ranking.RankingActivity" />
     </application>
 
 </manifest>

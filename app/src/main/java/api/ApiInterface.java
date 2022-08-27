@@ -1,31 +1,34 @@
-package gg.rubit.api;
+package api;
 
 import java.util.List;
 
-import gg.rubit.api.request.RequestGame;
-import gg.rubit.api.request.RequestUser;
-import gg.rubit.api.response.IdResponse;
-import gg.rubit.api.response.PairsResponse;
-import gg.rubit.api.response.UserResponse;
-import gg.rubit.data.ConversationDataValues;
-import gg.rubit.data.UserDataValues;
+
+import api.request.RankingPodioRequest;
+import api.request.RequestGame;
+import api.request.RequestUser;
+import api.response.CVID_Tabla;
+import api.response.PairsResponse;
+import api.response.UserResponse;
+import data.ConversationDataValues;
+import data.UserDataValues;
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Path;
 
 public interface ApiInterface {
 
     @POST("login")
-    Call<UserResponse> login(@Body RequestUser request);
+    Call<api.response.UserResponse> login(@Body RequestUser request);
 
     @POST("usuarios")
-    Call<IdResponse> postRegistrarUsuarios(@Body UserDataValues estudiante);
+    Call<api.response.IdResponse> postRegistrarUsuarios(@Body UserDataValues estudiante);
 
     @POST("datos_usuarios")
     Call<Integer> postRegistrarDatosUsuarios(@Body UserDataValues estudiante);
 
-    @POST("usuarios")
+    @POST("partida")
     Call<Integer> postRegistrarPartida(@Body RequestGame partida);
 
     @GET("conversacion")
@@ -33,4 +36,23 @@ public interface ApiInterface {
 
     @GET("preguntas_pareo")
     Call<List<PairsResponse>> getPairsList();
+
+    @GET("datos_usuarios")
+    Call<List<CVID_Tabla>> getPuntaje();
+
+    @GET("mostrarUser")
+    Call<UserResponse> getUserDataById(@Body Integer userId);
+
+    @GET("datos_usuarios")
+    Call<List<UserResponse>> getDataUser();
+
+    @GET("ranking")
+    Call<List<CVID_Tabla>> getRanking();
+
+    @GET("ranking2")
+    Call<List<CVID_Tabla>> getRanking2();
+
+    @GET("datos_usuarios3")
+    Call<List<RankingPodioRequest>> getParticipantes();
+
 }

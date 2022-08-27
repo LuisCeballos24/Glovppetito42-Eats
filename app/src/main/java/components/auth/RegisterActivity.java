@@ -1,8 +1,7 @@
-package gg.rubit.components.auth;
+package components.auth;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -10,15 +9,15 @@ import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.glovppetito42eats.R;
 
-import gg.rubit.R;
-import gg.rubit.api.ApiService;
-import gg.rubit.api.response.IdResponse;
-import gg.rubit.api.response.UserResponse;
-import gg.rubit.data.UserDataValues;
+import api.ApiService;
+import api.response.IdResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
+import data.UserDataValues;
 import retrofit2.Response;
+
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -32,9 +31,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
-
-        click = MediaPlayer.create(this, R.raw.click);
-        music = MediaPlayer.create(this, R.raw.menumusic);
+        ;
         music.start();
 
         i = getIntent();
@@ -67,7 +64,7 @@ public class RegisterActivity extends AppCompatActivity {
             estudiante.setCedula(cedula.getText().toString());
             estudiante.setTipo_usuario("");
 
-            Call<IdResponse> response1 = ApiService.getApiService().postRegistrarUsuarios(estudiante);
+            retrofit2.Call<IdResponse> response1 = ApiService.getApiService().postRegistrarUsuarios(estudiante);
             response1.enqueue(new Callback<IdResponse>() {
 
                 @Override
@@ -83,25 +80,26 @@ public class RegisterActivity extends AppCompatActivity {
                         IdResponse id = response.body();
                         estudiante.setUsuario_id(id.getId());
 
-                        Call<Integer> responses = ApiService.getApiService().postRegistrarDatosUsuarios(estudiante);
+                        retrofit2.Call<Integer> responses = ApiService.getApiService().postRegistrarDatosUsuarios(estudiante);
                         responses.enqueue(new Callback<Integer>() {
                             @Override
-                            public void onResponse(Call<Integer> call, Response<Integer> response) {
+                            public void onResponse(retrofit2.Call<Integer> call, Response<Integer> response) {
                                 if (response.isSuccessful()) {
                                     //UserResponse id = response.body();
                                     Toast.makeText(getApplicationContext(), "Datos del Usuario Creados Correctamente", Toast.LENGTH_LONG).show();
-                                    Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                                    Intent i = new Intent(getApplicationContext(), components.auth.LoginActivity.class);
                                     startActivity(i);
                                     int x = 1;
                                 } else {
                                     int x = 1;
                                 }
+
                             }
 
                             @Override
-                            public void onFailure(Call<Integer> call, Throwable t) {
+                            public void onFailure(retrofit2.Call<Integer> call, Throwable t) {
                                 Toast.makeText(getApplicationContext(), "Datos del Usuario Creados Correctamente", Toast.LENGTH_LONG).show();
-                                Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                                Intent i = new Intent(getApplicationContext(), components.auth.LoginActivity.class);
                                 startActivity(i);
                                 int x = 1;
                             }
@@ -112,9 +110,9 @@ public class RegisterActivity extends AppCompatActivity {
                 }
 
                 @Override
-                public void onFailure(Call<IdResponse> call, Throwable t) {
+                public void onFailure(retrofit2.Call<IdResponse> call, Throwable t) {
                     Toast.makeText(getApplicationContext(), "Datos del Usuario Creados Correctamente", Toast.LENGTH_LONG).show();
-                    Intent i = new Intent(getApplicationContext(), LoginActivity.class);
+                    Intent i = new Intent(getApplicationContext(), components.auth.LoginActivity.class);
                     startActivity(i);
                     int x = 1;
                 }
@@ -126,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
 
     public void goBack(View view) {
         click.start();
-        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+        startActivity(new Intent(getApplicationContext(), components.auth.LoginActivity.class));
     }
 
     @Override

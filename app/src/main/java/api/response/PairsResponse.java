@@ -1,4 +1,4 @@
-package gg.rubit.api.response;
+package api.response;
 
 public class PairsResponse {
 

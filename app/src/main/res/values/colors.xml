@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#B4B4B4</color>
+
+    //////////perzonalisados
+    <color name="Morado">#9E5CE3</color>
+    <color name="MoradoFondo">#23183a</color>
+    <color name="MoradoInput">#492F7E</color>
+    <color name="error">#e01072</color>
+
 </resources>

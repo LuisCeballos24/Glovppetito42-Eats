@@ -1,30 +1,30 @@
-package gg.rubit.components.auth;
+package components.auth;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.example.glovppetito42eats.R;
 
-import gg.rubit.R;
-import gg.rubit.api.ApiService;
-import gg.rubit.api.request.RequestUser;
-import gg.rubit.api.response.UserResponse;
-import gg.rubit.data.User;
-import gg.rubit.database.DatabaseManager;
+
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import api.ApiService;
+import api.request.RequestUser;
+import api.response.UserResponse;
+import ui.bar.navigation.NavigationBarUI;
+
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText userEmail, userPassword;
     int type;
-    DatabaseManager database;
     MediaPlayer click, music;
 
     @Override
@@ -32,13 +32,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        database = new DatabaseManager(getApplicationContext());
-
         userEmail = (EditText) findViewById(R.id.email);
         userPassword = (EditText) findViewById(R.id.password);
-
-        click = MediaPlayer.create(this, R.raw.click);
-        music = MediaPlayer.create(this, R.raw.menumusic);
         music.start();
 
         verifyUserSession();
@@ -51,10 +46,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void verifyUserSession() {
-        User user = database.getUserSession();
-        if (user != null) {
-            startActivity(new Intent(getApplicationContext(), AuthMessageActivity.class));
-        }
+
+            startActivity(new Intent(getApplicationContext(), components.auth.AuthMessageActivity.class));
     }
 
     public void performUserLogin(View v) {
@@ -66,23 +59,23 @@ public class LoginActivity extends AppCompatActivity {
             request.setCorreo(user);
             request.setPassword(pass);
 
-            Call<UserResponse> response = ApiService.getApiService().login(request);
+            retrofit2.Call<UserResponse> response = ApiService.getApiService().login(request);
             response.enqueue(new Callback<UserResponse>() {
                 @Override
-                public void onResponse(Call<UserResponse> call, Response<UserResponse> response) {
+                public void onResponse(retrofit2.Call<UserResponse> call, Response<UserResponse> response) {
                     if (response.isSuccessful()) {
                         UserResponse estudiante = response.body();
                         if (estudiante != null) {
-                            User user = new User(estudiante.getId(), estudiante.getCorreo(), "", estudiante.getNombre());
-
-                            database.saveUserSession(user);
 
                             Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_LONG).show();
                             estudiante.setTipo(3);
 
-                            Intent i = new Intent(getApplicationContext(), AuthMessageActivity.class);
+                            Intent i = new Intent(getApplicationContext(), NavigationBarUI.class);
+                            i.putExtra("UserId", estudiante.getUsuario_id());
                             i.putExtra("Nombre", estudiante.getNombre());
-                            i.putExtra("Tipaje", estudiante.getTipo());
+                            i.putExtra("Apellido", estudiante.getApellido());
+                            i.putExtra("Cedula", estudiante.getCedula());
+                            i.putExtra("Correo", estudiante.getCorreo());
 
                             startActivity(i);
                         }
