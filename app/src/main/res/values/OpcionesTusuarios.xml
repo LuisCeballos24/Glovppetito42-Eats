@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Tipo_usuario">
+        <item>--Seleccione--</item>
+        <item>Estudiante</item>
+        <item>Profesor</item>
+    </string-array>
+
+</resources>

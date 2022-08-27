@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/lecciones"
+        android:title="Lecciones"
+        android:icon="@drawable/ic_baseline_school_24"/>
+    <item android:id="@+id/ranking"
+        android:title="Rankig"
+        android:icon="@drawable/ic_baseline_emoji_events_24"/>
+    <item android:id="@+id/jugar"
+        android:title="Jugar"
+        android:icon="@drawable/ic_baseline_play_arrow_24"/>
+    <item android:id="@+id/perfil"
+        android:title="Perfil"
+        android:icon="@drawable/ic_baseline_person_24"/>
+    <item android:id="@+id/ayuda"
+        android:title="Ayuda"
+        android:icon="@drawable/ic_baseline_help_24"/>
+</menu>
