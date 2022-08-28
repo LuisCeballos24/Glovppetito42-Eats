@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/MoradoFondo"
     android:orientation="vertical"
-    tools:context="components.auth.RegisterActivity">
+    tools:context=".components.auth.RegisterActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

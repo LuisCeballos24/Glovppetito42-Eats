@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.glovppetito42eats">
+    package="gg.rubit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Glovppetito42Eats"
-        tools:targetApi="31">
+        android:theme="@style/Theme.Rubit"
+        android:usesCleartextTraffic="true">
         <activity
-            android:name="ui.bar.navigation.NavigationBarUI"
+            android:name=".ui.bar.navigation.NavigationBarUI"
             android:exported="false"
             android:label="@string/title_activity_nav_bar"
             android:theme="@style/Theme.Rubit.NoActionBar" />
         <activity
-            android:name="ui.loading.LoadingUI"
+            android:name="gg.rubit.components.lessons.VideoLessonActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.components.lessons.LessonActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.components.lessons.DevelopmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.components.lessons.EngineeringActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.ui.tutorial.TutorialUI"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.ui.tutorial.TutorialMainActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.components.ranking.RankingPodioActivity"
+            android:exported="false" />
+        <activity
+            android:name="gg.rubit.ui.loading.LoadingUI"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,12 +47,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="ui.help.HelpUI" />
-        <activity android:name="components.auth.AuthMessageActivity" />
-        <activity android:name="components.auth.RegisterActivity" />
-        <activity android:name="components.auth.PasswordRecoveryActivity" />
-        <activity android:name="components.auth.LoginActivity" />
-        <activity android:name="components.ranking.RankingActivity" />
+
+        <activity android:name=".ui.help.HelpUI" />
+        <activity android:name="gg.rubit.components.auth.AuthMessageActivity" />
+        <activity android:name="gg.rubit.components.auth.RegisterActivity" />
+        <activity android:name="gg.rubit.components.auth.PasswordRecoveryActivity" />
+        <activity android:name="gg.rubit.components.auth.LoginActivity" />
+        <activity android:name="gg.rubit.components.ranking.RankingActivity" />
+        <activity android:name="gg.rubit.components.puntos.PuntosActivity" />
+        <activity android:name=".components.conversation.ConversacionActivity" />
+        <activity android:name=".components.conversation.SelectConversation" />
+        <activity android:name=".games.wordpicker.WordPickerGameActivity" />
+        <activity android:name=".games.quiz.QuizGameActivity" />
     </application>
 
 </manifest>

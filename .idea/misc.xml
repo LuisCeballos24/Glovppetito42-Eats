@@ -3,17 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_help_ui.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_mensaje_login.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_nav_bar.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_pantallaranking.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_recuperar_contrasena.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_registrar.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_splash.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/barra_progreso.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/fragment_notification.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/listview_pranking.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/AndroidF/app/src/main/res/layout/activity_mensaje_login.xml" value="0.1" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/AndroidF/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
       </map>
     </option>
   </component>

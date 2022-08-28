@@ -1,0 +1,276 @@
+﻿1
+00:00:00,480 --> 00:00:03,540
+las apis mueven al mundo visitar a un
+
+2
+00:00:03,540 --> 00:00:05,430
+perfil en twitter aprender a un
+
+3
+00:00:05,430 --> 00:00:07,460
+automóvil desde tu dispositivo celular
+
+4
+00:00:07,460 --> 00:00:10,409
+iniciar sesión en facebook dejar de
+
+5
+00:00:10,409 --> 00:00:12,059
+seguir a una persona en instagram
+
+6
+00:00:12,059 --> 00:00:14,549
+comprar un producto con una tarjeta de
+
+7
+00:00:14,549 --> 00:00:17,310
+crédito a través de amazon todas estas
+
+8
+00:00:17,310 --> 00:00:19,019
+acciones que realizamos día a día a
+
+9
+00:00:19,019 --> 00:00:21,390
+través de una interfaz gráfica como por
+
+10
+00:00:21,390 --> 00:00:23,580
+ejemplo dejar de seguir un usuario en
+
+11
+00:00:23,580 --> 00:00:24,539
+instagram
+
+12
+00:00:24,539 --> 00:00:26,910
+por detrás utilizan un app y para poder
+
+13
+00:00:26,910 --> 00:00:29,429
+ser ejecutadas el lápiz se encarga de
+
+14
+00:00:29,429 --> 00:00:32,070
+establecer una vía de comunicación entre
+
+15
+00:00:32,070 --> 00:00:34,199
+lo que quiere hacer el usuario es decir
+
+16
+00:00:34,199 --> 00:00:36,989
+el requerimiento y lo que debe ser
+
+17
+00:00:36,989 --> 00:00:39,600
+ejecutado dentro de una plataforma lo
+
+18
+00:00:39,600 --> 00:00:41,879
+cual devuelve al usuario una respuesta
+
+19
+00:00:41,879 --> 00:00:44,280
+piensa en los apis como si fueran un
+
+20
+00:00:44,280 --> 00:00:46,980
+túnel de comunicación entre tus acciones
+
+21
+00:00:46,980 --> 00:00:49,680
+y la plataforma que estás utilizando es
+
+22
+00:00:49,680 --> 00:00:52,829
+así que una app y permite el traspaso de
+
+23
+00:00:52,829 --> 00:00:54,960
+información y permite recibir
+
+24
+00:00:54,960 --> 00:00:57,660
+retroalimentación de qué fue lo que
+
+25
+00:00:57,660 --> 00:01:00,690
+sucedió con nuestro requerimiento
+
+26
+00:01:00,690 --> 00:01:04,080
+por lo tanto podemos definir un api por
+
+27
+00:01:04,080 --> 00:01:05,940
+sus siglas application programming
+
+28
+00:01:05,940 --> 00:01:09,150
+interface como una abstracción de
+
+29
+00:01:09,150 --> 00:01:11,430
+procedimientos o funciones de una
+
+30
+00:01:11,430 --> 00:01:14,340
+plataforma con el fin de ser utilizados
+
+31
+00:01:14,340 --> 00:01:17,490
+en esta figura el api sería representado
+
+32
+00:01:17,490 --> 00:01:19,590
+por el círculo alrededor de la
+
+33
+00:01:19,590 --> 00:01:21,869
+plataforma de instagram y cada punto
+
+34
+00:01:21,869 --> 00:01:23,750
+representa los diferentes procedimientos
+
+35
+00:01:23,750 --> 00:01:26,940
+que posee el app y que están expuestos
+
+36
+00:01:26,940 --> 00:01:29,729
+para que los usuarios a través de una
+
+37
+00:01:29,729 --> 00:01:32,159
+interfaz o a través de algún protocolo
+
+38
+00:01:32,159 --> 00:01:36,340
+de comunicación puedan utilizarlos
+
+39
+00:01:36,340 --> 00:01:39,189
+una api puede retornar información en
+
+40
+00:01:39,189 --> 00:01:42,820
+diversos formatos tales como x ml o
+
+41
+00:01:42,820 --> 00:01:45,640
+jason que luego pueden ser presentados a
+
+42
+00:01:45,640 --> 00:01:47,890
+nosotros de manera bonita en una
+
+43
+00:01:47,890 --> 00:01:48,719
+interfaz
+
+44
+00:01:48,719 --> 00:01:51,789
+además las apis también pueden ejecutar
+
+45
+00:01:51,789 --> 00:01:54,729
+procesos de manera remota o realizar
+
+46
+00:01:54,729 --> 00:01:56,679
+alguna acción dentro de una plataforma
+
+47
+00:01:56,679 --> 00:01:59,679
+así como eliminar un registro de una
+
+48
+00:01:59,679 --> 00:02:02,259
+base de datos o llamar a procedimientos
+
+49
+00:02:02,259 --> 00:02:06,310
+internos además un api permite al
+
+50
+00:02:06,310 --> 00:02:09,818
+proveedor proteger sus procedimientos y
+
+51
+00:02:09,818 --> 00:02:12,700
+proteger sus datos ya que muchas de
+
+52
+00:02:12,700 --> 00:02:15,190
+estas apps están diseñadas para requerir
+
+53
+00:02:15,190 --> 00:02:17,349
+una autenticación por parte de los
+
+54
+00:02:17,349 --> 00:02:19,870
+usuarios externos antes de poder ser
+
+55
+00:02:19,870 --> 00:02:22,150
+utilizadas entre las cuales tenemos
+
+56
+00:02:22,150 --> 00:02:25,660
+basic out o out como los mecanismos más
+
+57
+00:02:25,660 --> 00:02:28,580
+utilizados de autenticación
+
+58
+00:02:28,580 --> 00:02:30,770
+cuando hablamos de un api estamos
+
+59
+00:02:30,770 --> 00:02:33,170
+hablando de posibilidades infinitas que
+
+60
+00:02:33,170 --> 00:02:35,420
+nosotros como usuarios sólo percibimos
+
+61
+00:02:35,420 --> 00:02:37,910
+como ejecutar acciones acciones que
+
+62
+00:02:37,910 --> 00:02:41,300
+realizamos todos los días sin embargo no
+
+63
+00:02:41,300 --> 00:02:42,950
+nos interesa el detalle de cómo
+
+64
+00:02:42,950 --> 00:02:45,800
+funcionan no nos interesa qué es lo que
+
+65
+00:02:45,800 --> 00:02:48,200
+hacen por detrás no tenemos el más
+
+66
+00:02:48,200 --> 00:02:51,350
+mínimo conocimiento de la lógica o de la
+
+67
+00:02:51,350 --> 00:02:53,590
+programación por detrás de las mismas
+
+68
+00:02:53,590 --> 00:02:57,290
+simplemente las utilizamos funcionan y
+
+69
+00:02:57,290 --> 00:03:00,910
+eso nos hace feliz
+

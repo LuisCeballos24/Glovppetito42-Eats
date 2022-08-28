@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondojuego3"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    tools:context=".games.quiz.QuizGameActivity">
+
+    <TextView
+        android:id="@+id/pregunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/opciones"
+        android:text="PREGUNTA"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgicono"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_above="@+id/pregunta"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/rubit" />
+
+    <LinearLayout
+        android:id="@+id/opciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/opcion_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Opcion A"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/opcion_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Opcion B"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/opcion_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Opcion C"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/opcion_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/white"
+            android:text="Opcion D"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/siguiente_buton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/opciones"
+        android:layout_marginTop="40dp"
+        android:text="Siguiente" />
+</LinearLayout>

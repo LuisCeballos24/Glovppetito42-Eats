@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/MoradoFondo"
     android:orientation="vertical"
-    tools:context="components.ranking.RankingActivity">
+    tools:context=".components.ranking.RankingActivity">
 
     <ImageView
         android:layout_width="150dp"

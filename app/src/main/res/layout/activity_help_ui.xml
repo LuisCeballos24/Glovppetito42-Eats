@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondojuego3"
     android:orientation="vertical"
-    tools:context="ui.help.HelpUI">
+    tools:context=".ui.help.HelpUI">
 
     <ImageView
         android:layout_width="150dp"
