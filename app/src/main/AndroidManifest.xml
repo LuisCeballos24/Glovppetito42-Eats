@@ -10,13 +10,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Rubit"
+        android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
             android:name="gg.Glovpptetio42.ui.bar.navigation.NavigationBarUI"
             android:exported="false"
             android:label="@string/title_activity_nav_bar"
-            android:theme="@style/Theme.Rubit.NoActionBar" />
+            android:theme="@style/Theme.Glovppetito42.NoActionBar" />
         <activity
             android:name="gg.Glovpptetio42.components.lessons.VideoLessonActivity"
             android:exported="false" />

@@ -63,7 +63,7 @@ public class UserDataValues {
         this.cedula = cedula;
     }
 
-    public String getTipo() {
+    public String getTipo_usuario() {
         return tipo_usuario;
     }
 

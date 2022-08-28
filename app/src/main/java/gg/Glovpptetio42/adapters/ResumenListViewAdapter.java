@@ -15,6 +15,7 @@ import java.util.List;
 import gg.Glovpptetio42.R;
 import gg.Glovpptetio42.api.response.Partida;
 
+
 public class ResumenListViewAdapter extends ArrayAdapter<Partida> {
 
     List<Partida> partidas = new ArrayList<>();

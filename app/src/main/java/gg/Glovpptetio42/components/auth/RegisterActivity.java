@@ -5,6 +5,7 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
@@ -22,9 +23,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     EditText nombre, correo, password, apellido, cedula, usuario_id;
     MediaPlayer click, music;
+    String tipo;
     Intent i;
     int x;
-    RadioGroup rg;
+    RadioButton r1,r2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,17 +55,24 @@ public class RegisterActivity extends AppCompatActivity {
         password = (EditText) findViewById(R.id.Rptpassword);
         apellido = (EditText) findViewById(R.id.apellido);
         cedula = (EditText) findViewById(R.id.cedula);
+        r1 = (RadioButton) findViewById(R.id.rbConsu);
+        r2 = (RadioButton) findViewById(R.id.rbAdmin);
     }
 
     public void registerUser(View v) {
         try {
+            if (r1.isChecked()==true) {
+                tipo="Consumidor";
+            } else
+            if (r2.isChecked()==true) {
+                tipo="Admistrador";
+            }
             UserDataValues estudiante = new UserDataValues();
             estudiante.setNombre(nombre.getText().toString());
             estudiante.setCorreo(correo.getText().toString());
             estudiante.setPassword(password.getText().toString());
             estudiante.setApellido(apellido.getText().toString());
             estudiante.setCedula(cedula.getText().toString());
-            estudiante.setTipo_usuario("");
 
             Call<IdResponse> response1 = ApiService.getApiService().postRegistrarUsuarios(estudiante);
             response1.enqueue(new Callback<IdResponse>() {
@@ -77,6 +86,7 @@ public class RegisterActivity extends AppCompatActivity {
                         estudiante.setPassword(password.getText().toString());
                         estudiante.setApellido(apellido.getText().toString());
                         estudiante.setCedula(cedula.getText().toString());
+                        estudiante.setTipo_usuario(tipo);
 
                         IdResponse id = response.body();
                         estudiante.setUsuario_id(id.getId());
