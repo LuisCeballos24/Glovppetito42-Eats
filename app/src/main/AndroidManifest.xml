@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="gg.Glovpptetio42">
+    package="gg.glovpptetio42">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,33 +13,33 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="gg.Glovpptetio42.ui.bar.navigation.NavigationBarUI"
+            android:name="gg.glovpptetio42.ui.bar.navigation.NavigationBarUI"
             android:exported="false"
             android:label="@string/title_activity_nav_bar"
             android:theme="@style/Theme.Glovppetito42.NoActionBar" />
         <activity
-            android:name="gg.Glovpptetio42.components.lessons.VideoLessonActivity"
+            android:name="gg.glovpptetio42.components.lessons.VideoLessonActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.components.lessons.LessonActivity"
+            android:name="gg.glovpptetio42.components.lessons.LessonActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.components.lessons.DevelopmentActivity"
+            android:name="gg.glovpptetio42.components.lessons.DevelopmentActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.components.lessons.EngineeringActivity"
+            android:name="gg.glovpptetio42.components.lessons.EngineeringActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.ui.tutorial.TutorialUI"
+            android:name="gg.glovpptetio42.ui.tutorial.TutorialUI"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.ui.tutorial.TutorialMainActivity"
+            android:name="gg.glovpptetio42.ui.tutorial.TutorialMainActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.components.ranking.RankingPodioActivity"
+            android:name="gg.glovpptetio42.components.ranking.RankingPodioActivity"
             android:exported="false" />
         <activity
-            android:name="gg.Glovpptetio42.ui.loading.LoadingUI"
+            android:name="gg.glovpptetio42.ui.loading.LoadingUI"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,17 +48,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="gg.Glovpptetio42.ui.help.HelpUI" />
-        <activity android:name="gg.Glovpptetio42.components.auth.AuthMessageActivity" />
-        <activity android:name="gg.Glovpptetio42.components.auth.RegisterActivity" />
-        <activity android:name="gg.Glovpptetio42.components.auth.PasswordRecoveryActivity" />
-        <activity android:name="gg.Glovpptetio42.components.auth.LoginActivity" />
-        <activity android:name="gg.Glovpptetio42.components.ranking.RankingActivity" />
-        <activity android:name="gg.Glovpptetio42.components.puntos.PuntosActivity" />
-        <activity android:name="gg.Glovpptetio42.components.conversation.ConversacionActivity" />
-        <activity android:name="gg.Glovpptetio42.components.conversation.SelectConversation" />
-        <activity android:name="gg.Glovpptetio42.games.wordpicker.WordPickerGameActivity" />
-        <activity android:name="gg.Glovpptetio42.games.quiz.QuizGameActivity" />
+        <activity android:name="gg.glovpptetio42.ui.help.HelpUI" />
+        <activity android:name="gg.glovpptetio42.components.auth.AuthMessageActivity" />
+        <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
+        <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
+        <activity android:name="gg.glovpptetio42.components.auth.LoginActivity" />
+        <activity android:name="gg.glovpptetio42.components.ranking.RankingActivity" />
+        <activity android:name="gg.glovpptetio42.components.puntos.PuntosActivity" />
+        <activity android:name="gg.glovpptetio42.components.conversation.ConversacionActivity" />
+        <activity android:name="gg.glovpptetio42.components.conversation.SelectConversation" />
+        <activity android:name="gg.glovpptetio42.games.wordpicker.WordPickerGameActivity" />
+        <activity android:name="gg.glovpptetio42.games.quiz.QuizGameActivity" />
     </application>
 
 </manifest>
