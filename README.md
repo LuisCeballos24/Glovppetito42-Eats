@@ -1,9 +1,5 @@
-# Rubit (Android)
-Duolingo replica
+# glovpptetio42 (Android)
+Apptito replica
 
 ## Information
-  * 
-
-### Pending
-  * Setup API remotely on a server
-  * Stablish connections to the API properly
+  *
