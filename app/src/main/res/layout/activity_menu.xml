@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F09872"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido"
+        android:textAlignment="center"
+        android:id="@+id/titulo"
+        android:layout_centerHorizontal="true"
+        android:background="#FC3A52"
+        android:textSize="25sp"
+        android:gravity="center_horizontal" />
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/imagen"
+        android:layout_below="@id/titulo"
+
+        android:src="@drawable/globo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recetas_d"
+        android:layout_below="@id/imagen"
+        android:text="recetas guardadas"
+        app:backgroundTint="#F9B248"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/agregar_r"
+        android:text="agregar recetas"
+        app:backgroundTint="#F9B248"
+        android:layout_below="@id/recetas_d"
+        android:paddingVertical="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/guardados"
+        android:text="ver recetas guardadas"
+        app:backgroundTint="#F9B248"
+        android:layout_below="@id/agregar_r"
+        android:paddingVertical="15dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/guardados"
+        android:text="añadir usuario"
+        android:id="@+id/anadir"
+        app:backgroundTint="#F9B248"
+        android:paddingVertical="15dp"/>
+
+</RelativeLayout>
