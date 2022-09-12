@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MoradoFondo"
+    android:background="@color/yellow"
     android:orientation="vertical"
-    tools:context=".components.ranking.RankingActivity">
+    tools:context=".components.ranking.IngredientesActivity">
 
     <ImageView
         android:layout_width="150dp"
@@ -17,7 +17,7 @@
         android:backgroundTint="#062132"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/rubit"
+        android:src="@drawable/logo"
         app:cornerRadius="20dp"
         app:strokeColor="@color/white" />
 
@@ -31,8 +31,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="RUBIT"
-            android:textColor="@color/white"
+            android:text="GLOVPPETITO42"
+            android:textColor="@color/azul"
             android:textSize="35dp"
             android:textStyle="bold" />
 
@@ -41,8 +41,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:gravity="center"
-            android:text="Ranking"
-            android:textColor="@color/white"
+            android:text="Recetas"
+            android:textColor="@color/azul"
             android:textSize="25dp"
             android:textStyle="bold" />
     </GridLayout>
@@ -56,27 +56,6 @@
         android:layout_marginBottom="5dp"
         android:gravity="center"
         android:orientation="horizontal">
-
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#9E5CE3"
-            android:onClick="Local"
-            android:text="Local"
-            android:textColor="@color/white"
-            app:cornerRadius="5dp" />
-
-        <Button
-            style="?attr/materialButtonOutlinedStyle"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="25dp"
-            android:backgroundTint="#9E5CE3"
-            android:onClick="General"
-            android:text="General"
-            android:textColor="@color/white"
-            app:cornerRadius="5dp" />
     </LinearLayout>
 
     <ImageView

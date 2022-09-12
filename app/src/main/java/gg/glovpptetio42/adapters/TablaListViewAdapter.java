@@ -34,12 +34,12 @@ public class TablaListViewAdapter extends ArrayAdapter<CVID_Tabla> {
         TextView pos = (TextView) item.findViewById(R.id.txtPosicion);
         pos.setText("Posición: " + x);*/
 
-        TextView jugador = (TextView)item.findViewById(R.id.lslblJugador);
-        jugador.setText("Jugador: "+tabla.get(position).getNombre()+' '+tabla.get(position).getApellido());
-
-
-        TextView puntaje = (TextView)item.findViewById(R.id.lslblPuntaje);
-        puntaje.setText("Puntaje: "+tabla.get(position).getPuntajeac());
+        TextView producto = (TextView)item.findViewById(R.id.lslblProducto);
+        producto.setText("Producto: "+tabla.get(position).getProducto());
+        TextView preparacion = (TextView)item.findViewById(R.id.lslblPreparacion);
+        preparacion.setText("Preparacion: "+tabla.get(position).getPreparacion());
+        TextView ingredientes = (TextView)item.findViewById(R.id.lslblIngredientes);
+        ingredientes.setText("Ingredientes: "+tabla.get(position).getIngredientes());
 
 
         return item;

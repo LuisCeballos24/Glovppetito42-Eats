@@ -53,7 +53,7 @@
         <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.LoginActivity" />
-        <activity android:name="gg.glovpptetio42.components.ranking.RankingActivity" />
+        <activity android:name="gg.glovpptetio42.components.ranking.IngredientesActivity" />
         <activity android:name="gg.glovpptetio42.components.puntos.PuntosActivity" />
         <activity android:name="gg.glovpptetio42.components.conversation.ConversacionActivity" />
         <activity android:name="gg.glovpptetio42.components.conversation.SelectConversation" />

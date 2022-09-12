@@ -48,7 +48,7 @@ public interface ApiInterface {
     @GET("datos_usuarios")
     Call<List<UserResponse>> getDataUser();
 
-    @GET("ranking")
+    @GET("receta")
     Call<List<CVID_Tabla>> getRanking();
 
     @GET("ranking2")

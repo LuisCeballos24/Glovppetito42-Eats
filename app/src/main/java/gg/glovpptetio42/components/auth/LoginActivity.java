@@ -86,8 +86,14 @@ public class LoginActivity extends AppCompatActivity {
                             i.putExtra("Apellido", estudiante.getApellido());
                             i.putExtra("Cedula", estudiante.getCedula());
                             i.putExtra("Correo", estudiante.getCorreo());
+                            type=estudiante.getTipo();
+                            if(type==3){
+                                startActivity(i);
+                            }
+                            else{
 
-                            startActivity(i);
+                            }
+
                         }
                     } else {
                         Toast.makeText(getApplicationContext(), "Error Al Iniciar Sesión", Toast.LENGTH_LONG).show();

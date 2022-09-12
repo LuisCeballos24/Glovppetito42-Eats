@@ -17,7 +17,7 @@ public class ApiService {
         httpClient.addInterceptor(logging);
 
         if (API_SERVICE == null) {
-            Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.10.117:8000/").addConverterFactory(GsonConverterFactory.create()).client(httpClient.build()).build();
+            Retrofit retrofit = new Retrofit.Builder().baseUrl("http://192.168.56.1:8000/").addConverterFactory(GsonConverterFactory.create()).client(httpClient.build()).build();
             API_SERVICE = retrofit.create(ApiInterface.class);
         }
 

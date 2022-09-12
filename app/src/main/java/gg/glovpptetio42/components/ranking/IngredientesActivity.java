@@ -18,7 +18,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class RankingActivity extends AppCompatActivity {
+public class IngredientesActivity extends AppCompatActivity {
 
     ListView lstTabla;
     int tipo;
