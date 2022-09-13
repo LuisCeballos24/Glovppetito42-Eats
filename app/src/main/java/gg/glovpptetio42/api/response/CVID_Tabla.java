@@ -1,40 +1,40 @@
 package gg.glovpptetio42.api.response;
 
 public class CVID_Tabla {
-    private String correo;
-    private String nombre;
-    private String apellido;
-    private int puntajeac;
+    private String receta_id;
+    private String producto;
+    private String ingredientes;
+    private String preparacion;
 
-    public String getCorreo() {
-        return correo;
+    public String getProducto() {
+        return producto;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public String getReceta_id() {
+        return receta_id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public void setReceta_id(String receta_id) {
+        this.receta_id = receta_id;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setProducto(String producto) {
+        this.producto = producto;
     }
 
-    public String getApellido() {
-        return apellido;
+    public String getIngredientes() {
+        return ingredientes;
     }
 
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
+    public void setIngredientes(String ingredientes) {
+        this.ingredientes = ingredientes;
     }
 
-    public int getPuntajeac() {
-        return puntajeac;
+    public String getPreparacion() {
+        return preparacion;
     }
 
-    public void setPuntajeac(int puntajeac) {
-        this.puntajeac = puntajeac;
+    public void setPreparacion(String preparacion) {
+        this.preparacion = preparacion;
     }
 }

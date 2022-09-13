@@ -12,7 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import gg.glovpptetio42.R;
 import gg.glovpptetio42.components.auth.AuthMessageActivity;
 import gg.glovpptetio42.components.conversation.SelectConversation;
-import gg.glovpptetio42.components.ranking.RankingActivity;
+import gg.glovpptetio42.components.ranking.IngredientesActivity;
 import gg.glovpptetio42.components.ranking.RankingFragment;
 import gg.glovpptetio42.games.wordpicker.WordPickerGameActivity;
 import gg.glovpptetio42.ui.help.HelpUI;
@@ -52,7 +52,7 @@ public class NavigationBarUI extends AppCompatActivity {
                     startActivity(new Intent(getApplicationContext(), SelectConversation.class));
                     return true;
                 case R.id.ranking:
-                    startActivity(new Intent(getApplicationContext(), RankingActivity.class));
+                    startActivity(new Intent(getApplicationContext(), IngredientesActivity.class));
                     return true;
                 case R.id.perfil:
                     Intent i = new Intent(getApplicationContext(), AuthMessageActivity.class);
