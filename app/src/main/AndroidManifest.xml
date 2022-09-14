@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".AgregarRecetasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".components.auth.LoginActivity"
             android:exported="true">
             <intent-filter>
@@ -20,11 +26,12 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-                 </activity>
+                 
+        </activity>
         <activity android:name="gg.glovpptetio42.components.auth.AuthMessageActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
-        <activity android:name="gg.glovpptetio42.components.ranking.IngredientesActivity" />
+        <activity android:name=".IngredientesActivity" />
     </application>
 
 </manifest>

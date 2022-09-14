@@ -13,8 +13,8 @@ import gg.glovpptetio42.R;
 import gg.glovpptetio42.api.ApiService;
 import gg.glovpptetio42.api.request.RequestUser;
 import gg.glovpptetio42.api.response.UserResponse;
-import gg.glovpptetio42.components.ranking.IngredientesActivity;
 import gg.glovpptetio42.data.User;
+import gg.glovpptetio42.menu.MenuActivity;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -66,7 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_LONG).show();
                             estudiante.setTipo(3);
 
-                            Intent i = new Intent(getApplicationContext(), IngredientesActivity.class);
+                            Intent i = new Intent(getApplicationContext(), MenuActivity.class);
                             i.putExtra("UserId", estudiante.getUsuario_id());
                             i.putExtra("Nombre", estudiante.getNombre());
                             i.putExtra("Apellido", estudiante.getApellido());
@@ -77,7 +77,7 @@ public class LoginActivity extends AppCompatActivity {
                                 startActivity(i);
                             }
                             else{
-
+                                startActivity(i);
                             }
 
                         }

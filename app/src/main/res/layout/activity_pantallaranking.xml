@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/yellow"
     android:orientation="vertical"
-    tools:context=".components.ranking.IngredientesActivity">
+    tools:context=".components.recipe.IngredientsActivity">
 
     <ImageView
         android:layout_width="150dp"

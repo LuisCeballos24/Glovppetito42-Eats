@@ -1,4 +1,4 @@
-package gg.glovpptetio42.components.ranking;
+package gg.glovpptetio42.components.recipe;
 
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
@@ -18,7 +18,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class IngredientesActivity extends AppCompatActivity {
+public class IngredientsActivity extends AppCompatActivity {
 
     ListView lstTabla;
     int tipo;
