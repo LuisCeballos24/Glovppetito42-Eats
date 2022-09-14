@@ -13,9 +13,8 @@ import gg.glovpptetio42.R;
 import gg.glovpptetio42.api.ApiService;
 import gg.glovpptetio42.api.request.RequestUser;
 import gg.glovpptetio42.api.response.UserResponse;
+import gg.glovpptetio42.components.ranking.IngredientesActivity;
 import gg.glovpptetio42.data.User;
-import gg.glovpptetio42.database.DatabaseManager;
-import gg.glovpptetio42.ui.bar.navigation.NavigationBarUI;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -24,7 +23,6 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText userEmail, userPassword;
     int type;
-    DatabaseManager database;
     MediaPlayer click, music;
 
     @Override
@@ -32,16 +30,12 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        database = new DatabaseManager(getApplicationContext());
-
         userEmail = (EditText) findViewById(R.id.email);
         userPassword = (EditText) findViewById(R.id.password);
 
         click = MediaPlayer.create(this, R.raw.click);
         music = MediaPlayer.create(this, R.raw.menumusic);
         music.start();
-
-        verifyUserSession();
     }
 
     @Override
@@ -50,12 +44,6 @@ public class LoginActivity extends AppCompatActivity {
         music.start();
     }
 
-    private void verifyUserSession() {
-        User user = database.getUserSession();
-        if (user != null) {
-            startActivity(new Intent(getApplicationContext(), AuthMessageActivity.class));
-        }
-    }
 
     public void performUserLogin(View v) {
         try {
@@ -75,12 +63,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (estudiante != null) {
                             User user = new User(estudiante.getId(), estudiante.getCorreo(), "", estudiante.getNombre());
 
-                            database.saveUserSession(user);
-
                             Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_LONG).show();
                             estudiante.setTipo(3);
 
-                            Intent i = new Intent(getApplicationContext(), NavigationBarUI.class);
+                            Intent i = new Intent(getApplicationContext(), IngredientesActivity.class);
                             i.putExtra("UserId", estudiante.getUsuario_id());
                             i.putExtra("Nombre", estudiante.getNombre());
                             i.putExtra("Apellido", estudiante.getApellido());

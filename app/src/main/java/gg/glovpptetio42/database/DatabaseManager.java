@@ -1,4 +1,4 @@
-package gg.glovpptetio42.database;
+/*package gg.glovpptetio42.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -26,7 +26,7 @@ public class DatabaseManager {
             if (db != null) {
                 ContentValues values = new ContentValues();
                 values.put("partida", gameId);
-                values.put("jugador", game.getPlayer());
+                //values.put("jugador", game.getPlayer());
                 return db.insert("partida", null, values);
             }
         } catch (Exception e) {
@@ -187,7 +187,7 @@ public class DatabaseManager {
         return null;
 
     }*/
-
+/*
     public Boolean saveUserSession(User user) {
         try {
             SQLiteDatabase db = databaseHelper.getWritableDatabase();
@@ -239,4 +239,4 @@ public class DatabaseManager {
 
         return false;
     }
-}
+}*/
