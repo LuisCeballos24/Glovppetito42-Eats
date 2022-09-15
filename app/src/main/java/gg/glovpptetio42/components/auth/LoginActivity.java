@@ -62,21 +62,10 @@ public class LoginActivity extends AppCompatActivity {
                         UserResponse estudiante = response.body();
                         if (estudiante != null) {
                             User user = new User(estudiante.getId(), estudiante.getCorreo(), "", estudiante.getNombre());
-
                             Toast.makeText(getApplicationContext(), "Login Exitoso", Toast.LENGTH_LONG).show();
-                            estudiante.setTipo(3);
-
                             Intent i = new Intent(getApplicationContext(), MenuActivity.class);
-                            i.putExtra("UserId", estudiante.getUsuario_id());
-                            i.putExtra("Nombre", estudiante.getNombre());
-                            i.putExtra("Apellido", estudiante.getApellido());
-                            i.putExtra("Cedula", estudiante.getCedula());
-                            i.putExtra("Correo", estudiante.getCorreo());
-                            type=estudiante.getTipo();
-                            if(type==3){
-                                startActivity(i);
-                            }
-                            else{
+                            type=estudiante.getTipo_usuario();
+                            if(type==1){
                                 startActivity(i);
                             }
 

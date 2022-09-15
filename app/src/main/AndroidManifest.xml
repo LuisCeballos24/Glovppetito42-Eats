@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".AgregarRecetasActivity"
+            android:name=".components.recipe.addRecipesActivity"
             android:exported="false" />
         <activity
-            android:name=".MenuActivity"
+            android:name=".menu.MenuActivity"
             android:exported="false" />
         <activity
             android:name=".components.auth.LoginActivity"
@@ -31,7 +31,7 @@
         <activity android:name="gg.glovpptetio42.components.auth.AuthMessageActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
-        <activity android:name=".IngredientesActivity" />
+        <activity android:name=".components.recipe.IngredientsActivity" />
     </application>
 
 </manifest>
