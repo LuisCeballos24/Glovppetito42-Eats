@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/MoradoFondo"
+    android:background="#FFAE6D"
     android:orientation="vertical"
     tools:context=".components.auth.AuthMessageActivity">
 
@@ -27,60 +27,61 @@
             android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
+            android:layout_marginTop="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/input"
+            android:background="#FFE9A0"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
             android:hint="Nombre"
             android:inputType="text"
             android:paddingStart="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/apellido"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/input"
+            android:background="#FFE9A0"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
             android:hint="Apellido"
             android:inputType="text"
             android:paddingStart="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
 
         <EditText
             android:id="@+id/correo"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/input"
+            android:background="#FFE9A0"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
             android:hint="Correo"
             android:inputType="textEmailAddress"
             android:paddingStart="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"/>
 
         <EditText
             android:id="@+id/cedula"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@drawable/input"
+            android:background="#FFE9A0"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
             android:hint="cedula"
             android:inputType="text"
             android:paddingStart="12dp"
-            android:textColor="@color/white"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
     </LinearLayout>
 </LinearLayout>
