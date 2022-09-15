@@ -6,10 +6,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import gg.glovpptetio42.R;
-import gg.glovpptetio42.components.recipe.addRecipesActivity;
+import gg.glovpptetio42.components.auth.RegisterActivity;
+import gg.glovpptetio42.components.recipe.AddRecipesActivity;
 
 public class MenuActivity extends AppCompatActivity {
     Button recetas_d,agregar_r,guardados,anadir;
@@ -25,15 +25,16 @@ public class MenuActivity extends AppCompatActivity {
 
     public void menuPrincipal(View v){
         switch (v.getId()){
-            case R.id.agregar_r: Intent i = new Intent(getApplicationContext(), addRecipesActivity.class);
+            case R.id.agregar_r: Intent i = new Intent(getApplicationContext(), AddRecipesActivity.class);
                                  startActivity(i);
                 break;
-           /* case R.id.recetas_d:
+           case R.id.recetas_d:
                 break;
             case R.id.guardados:
                 break;
-            case R.id.anadir:
-                break;*/
+            case R.id.anadir:Intent b = new Intent(getApplicationContext(), RegisterActivity.class);
+                             startActivity(b);
+                break;
         }
     }
 }

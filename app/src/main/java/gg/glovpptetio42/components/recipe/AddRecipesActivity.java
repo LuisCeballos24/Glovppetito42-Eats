@@ -11,7 +11,7 @@ import android.widget.Toast;
 import gg.glovpptetio42.R;
 import gg.glovpptetio42.menu.MenuActivity;
 
-public class addRecipesActivity extends AppCompatActivity {
+public class AddRecipesActivity extends AppCompatActivity {
 
     EditText receta_nombre, txt_Ingrediente1, txt_Ingrediente2, txt_Ingrediente3, txt_Ingrediente4, txt_Ingrediente5, txtpreparacion;
 
