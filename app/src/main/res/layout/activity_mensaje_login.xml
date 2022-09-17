@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFAE6D"
+    android:background="@color/naranja"
     android:orientation="vertical"
     tools:context=".components.auth.AuthMessageActivity">
 

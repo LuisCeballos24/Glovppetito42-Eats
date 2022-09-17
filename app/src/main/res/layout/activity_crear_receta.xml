@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/naranja"
     tools:context=".components.recipe.AddRecipesActivity">
 
     <LinearLayout
@@ -119,14 +120,16 @@
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul"
             android:text="Añadir receta"/>
 
         <Button
-            android:onClick="Volver"
-            android:layout_marginTop="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Volver"/>
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/azul"
+            android:onClick="Volver"
+            android:text="Volver" />
 
     </LinearLayout>
 </LinearLayout>
