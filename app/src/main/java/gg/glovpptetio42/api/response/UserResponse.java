@@ -7,7 +7,7 @@ public class UserResponse {
     private String nombre;
     private String apellido;
     private String cedula;
-    private int tipo;
+    private int tipo_usuario;
     private String password;
     private String created_at;
     private String updated_at;
@@ -57,12 +57,12 @@ public class UserResponse {
         this.cedula = cedula;
     }
 
-    public int getTipo() {
-        return tipo;
+    public int getTipo_usuario() {
+        return tipo_usuario;
     }
 
-    public void setTipo(int tipo) {
-        this.tipo = tipo;
+    public void setTipo_usuario(int tipo_usuario) {
+        this.tipo_usuario = tipo_usuario;
     }
 
     public String getPassword() {

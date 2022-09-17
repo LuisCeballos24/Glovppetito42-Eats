@@ -12,52 +12,28 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="gg.glovpptetio42.ui.bar.navigation.NavigationBarUI"
-            android:exported="false"
-            android:label="@string/title_activity_nav_bar"
-            android:theme="@style/Theme.Glovppetito42.NoActionBar" />
-        <activity
-            android:name="gg.glovpptetio42.components.lessons.VideoLessonActivity"
+            android:name=".SavedActivity"
             android:exported="false" />
         <activity
-            android:name="gg.glovpptetio42.components.lessons.LessonActivity"
+            android:name=".components.recipe.AddRecipesActivity"
             android:exported="false" />
         <activity
-            android:name="gg.glovpptetio42.components.lessons.DevelopmentActivity"
+            android:name=".menu.MenuActivity"
             android:exported="false" />
         <activity
-            android:name="gg.glovpptetio42.components.lessons.EngineeringActivity"
-            android:exported="false" />
-        <activity
-            android:name="gg.glovpptetio42.ui.tutorial.TutorialUI"
-            android:exported="false" />
-        <activity
-            android:name="gg.glovpptetio42.ui.tutorial.TutorialMainActivity"
-            android:exported="false" />
-        <activity
-            android:name="gg.glovpptetio42.components.ranking.RankingPodioActivity"
-            android:exported="false" />
-        <activity
-            android:name="gg.glovpptetio42.ui.loading.LoadingUI"
+            android:name=".components.auth.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+                 
         </activity>
-
-        <activity android:name="gg.glovpptetio42.ui.help.HelpUI" />
         <activity android:name="gg.glovpptetio42.components.auth.AuthMessageActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
-        <activity android:name="gg.glovpptetio42.components.auth.LoginActivity" />
-        <activity android:name="gg.glovpptetio42.components.ranking.RankingActivity" />
-        <activity android:name="gg.glovpptetio42.components.puntos.PuntosActivity" />
-        <activity android:name="gg.glovpptetio42.components.conversation.ConversacionActivity" />
-        <activity android:name="gg.glovpptetio42.components.conversation.SelectConversation" />
-        <activity android:name="gg.glovpptetio42.games.wordpicker.WordPickerGameActivity" />
-        <activity android:name="gg.glovpptetio42.games.quiz.QuizGameActivity" />
+        <activity android:name=".components.recipe.IngredientsActivity" />
     </application>
 
 </manifest>
