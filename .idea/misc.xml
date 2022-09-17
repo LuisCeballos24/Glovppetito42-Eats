@@ -3,26 +3,34 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_main.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_nav_bar.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_pantallaranking.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_puntaje.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_resumen.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/activity_splash.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/listview_pranking.xml" value="0.25" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/layout/listview_resumen.xml" value="0.1762917933130699" />
+        <entry key="..\:/Users/LuisPc/Documents/GitHub/Glovppetito42-Eats/Glovppetito42-Eats/app/src/main/res/menu/bottom_nav_menu.xml" value="0.3569230769230769" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/AndroidF/app/src/main/res/layout/activity_mensaje_login.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/AndroidF/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_crear_receta.xml" value="0.3625" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_nav_bar.xml" value="0.1" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_pantallaranking.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_registrar.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_resumen.xml" value="0.1" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_saved.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/fragment_settings.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/listview_pranking.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/layout/listview_resumen.xml" value="0.1" />
         <entry key="..\:/Users/lfceb/OneDrive/Documentos/GitHub/Glovppetito42-Eats/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11296296296296296" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.2391728719075521" />
-        <entry key="app/src/main/res/layout/activity_mensaje_login.xml" value="0.23257649739583333" />
-        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/activity_nav_bar.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/activity_recuperar_contrasena.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/activity_registrar.xml" value="0.14617462158203123" />
-        <entry key="app/src/main/res/layout/fragment_ayuda.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/fragment_settings.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/listview_pranking.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/listview_resumen.xml" value="0.19739583333333333" />
-        <entry key="app/src/main/res/layout/quiz_game_activity.xml" value="0.19739583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27375488281250004" />
+        <entry key="app/src/main/res/layout/activity_mensaje_login.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_menu.xml" value="0.19015045166015626" />
+        <entry key="app/src/main/res/layout/activity_registrar.xml" value="0.1" />
       </map>
     </option>
   </component>
