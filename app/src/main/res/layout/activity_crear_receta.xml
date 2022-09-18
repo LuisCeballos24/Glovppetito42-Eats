@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/naranja"
     tools:context=".components.recipe.AddRecipesActivity">
 
     <LinearLayout
@@ -16,101 +15,118 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="#C88E0533"
+            android:textStyle="bold"
+            android:text="Crear receta"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="40dp"
-            android:gravity="center"
-            android:text="Crear receta"
-            android:textColor="#C88E0533"
             android:textSize="28dp"
-            android:textStyle="bold" />
+            android:gravity="center"/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="Producto (Nombre de la receta)"/>
 
         <EditText
             android:id="@+id/txt_receta_nombre"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
-            android:hint="nombre de receta"
-            android:paddingStart="12dp"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:layout_marginBottom="12dp"
+            android:text=""/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="Ingrediente 1"/>
 
         <EditText
             android:id="@+id/txt_Ingrediente1"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
-            android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
-            android:hint="ingrediente 1"
-            android:paddingStart="12dp"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:layout_marginBottom="12dp"
+            android:text=""/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="Ingrediente 2"/>
 
         <EditText
             android:id="@+id/txt_Ingrediente2"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="12dp"
-            android:background="@color/naranjaedit"
-            android:hint="ingrediente 2"
-            android:paddingStart="12dp"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:text=""/>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="Ingrediente 3"/>
 
         <EditText
             android:id="@+id/txt_Ingrediente3"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="12dp"
-            android:background="@color/naranjaedit"
-            android:hint="ingrediente 3"
-            android:paddingStart="12dp"
-            android:textColor="@color/black"
-            android:textSize="18dp" />
-
+            android:text=""/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:layout_marginLeft="5dp"
+            android:text="Preparacion"/>
 
         <EditText
             android:id="@+id/txt_Preparacion"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
+            android:textColor="#606060"
+            android:textSize="18dp"
             android:layout_marginLeft="5dp"
             android:layout_marginBottom="12dp"
-            android:background="@color/naranjaedit"
-            android:hint="preparacion"
-            android:paddingStart="12dp"
-
-            android:textColor="@color/black"
-            android:textSize="18dp" />
+            android:text=""/>
 
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="10dp"
-            android:background="#FD841F"
-            android:gravity="center"
             android:onClick="Anadir_Receta"
-            android:text="Añadir receta"
-            android:textSize="20sp" />
-
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Añadir receta"/>
 
         <Button
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="#FD841F"
-            android:gravity="center"
             android:onClick="Volver"
-
-            android:text="Volver"
-            android:textSize="20sp" />
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"/>
 
     </LinearLayout>
 </LinearLayout>

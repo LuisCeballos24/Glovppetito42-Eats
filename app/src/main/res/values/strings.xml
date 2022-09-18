@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Glovpptito42</string>
+    <string name="title_activity_nav_bar">NavBarActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string-array name="Temas">
+        <item>Metodologias agiles</item>
+        <item>Programacion</item>
+    </string-array>
+</resources>

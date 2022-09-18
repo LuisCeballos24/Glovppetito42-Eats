@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/naranja"
+    android:background="@color/black"
     android:orientation="vertical"
     tools:context=".components.auth.RegisterActivity">
 
@@ -13,25 +13,15 @@
         android:layout_margin="25dp"
         android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginBottom="10dp"
-            android:text="Resgistate"
-            android:textSize="30sp"
-            android:textAlignment="center"
-            android:fontFamily="@font/m"/>
-
         <EditText
             android:id="@+id/nombre"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/perfilcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="Nombre"
             android:inputType="text"
             android:paddingStart="12dp"
@@ -43,11 +33,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/perfilcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="Apellido"
             android:inputType="text"
             android:paddingStart="12dp"
@@ -59,11 +48,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="Correo"
             android:inputType="textEmailAddress"
             android:paddingStart="12dp"
@@ -75,11 +63,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="cedula"
             android:inputType="text"
             android:paddingStart="12dp"
@@ -91,11 +78,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/candadocustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="Contraseña"
             android:inputType="textPassword"
             android:paddingStart="12dp"
@@ -107,11 +93,10 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:drawableStart="@drawable/candadocustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
-            android:textSize="15sp"
             android:hint="Repetir Contraseña"
             android:inputType="textPassword"
             android:paddingStart="12dp"
@@ -119,44 +104,38 @@
             android:textColorHint="@color/azul" />
 
         <RadioGroup
-            android:textSize="15sp"
-            android:id="@+id/rgTipo"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:gravity="center"
-            android:orientation="horizontal">
+        android:id="@+id/rgTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
 
         <RadioButton
-            android:textSize="15sp"
             android:id="@+id/rbConsu"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:checked="true"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:textColor="@color/azul"
             android:text="Consumidor" />
 
         <RadioButton
-            android:textSize="15sp"
             android:id="@+id/rbAdmin"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="wrap_content"
             android:checked="false"
-            android:background="@color/naranjaedit"
+            android:background="@color/yellow"
             android:textColor="@color/azul"
             android:value="Administrador"
             android:text="Administrador" />
-
     </RadioGroup>
         <Button
             android:id="@+id/btnRegistar"
-            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="25dp"
             android:background="@color/azul"
-            android:textAlignment="center"
             android:fontFamily="@font/ralebo"
             android:onClick="registerUser"
             android:text="Registrarse" />
