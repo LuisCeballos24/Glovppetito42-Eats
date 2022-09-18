@@ -11,15 +11,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import gg.glovpptetio42.R;
-import gg.glovpptetio42.api.response.CVID_Tabla;
+import gg.glovpptetio42.api.response.Recipes;
 
-public class TablaListViewAdapter extends ArrayAdapter<CVID_Tabla> {
-    List<CVID_Tabla> tabla = new ArrayList<>();
+public class TablaListViewAdapter extends ArrayAdapter<Recipes> {
+    List<Recipes> tabla = new ArrayList<>();
 
     //static int y=0;
     //int x=0;
 
-    public TablaListViewAdapter(Context context, List<CVID_Tabla> datos){
+    public TablaListViewAdapter(Context context, List<Recipes> datos){
         super(context, R.layout.listview_pranking,datos);
         tabla = datos;
         //y=0;
@@ -36,11 +36,6 @@ public class TablaListViewAdapter extends ArrayAdapter<CVID_Tabla> {
 
         TextView producto = (TextView)item.findViewById(R.id.lslblProducto);
         producto.setText("Producto: "+tabla.get(position).getProducto());
-        TextView preparacion = (TextView)item.findViewById(R.id.lslblPreparacion);
-        preparacion.setText("Preparacion: "+tabla.get(position).getPreparacion());
-        TextView ingredientes = (TextView)item.findViewById(R.id.lslblIngredientes);
-        ingredientes.setText("Ingredientes: "+tabla.get(position).getIngredientes());
-
 
         return item;
     }

@@ -13,7 +13,7 @@ import java.util.List;
 import gg.glovpptetio42.R;
 import gg.glovpptetio42.adapters.TablaListViewAdapter;
 import gg.glovpptetio42.api.ApiService;
-import gg.glovpptetio42.api.response.CVID_Tabla;
+import gg.glovpptetio42.api.response.Recipes;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -43,12 +43,12 @@ public class SavedActivity extends AppCompatActivity {
     }
 
     private void LoadListView(int n) {
-        Call<List<CVID_Tabla>> response = ApiService.getApiService().getRanking();
-        response.enqueue(new Callback<List<CVID_Tabla>>() {
+        Call<List<Recipes>> response = ApiService.getApiService().getRanking();
+        response.enqueue(new Callback<List<Recipes>>() {
             @Override
-            public void onResponse(Call<List<CVID_Tabla>> call, Response<List<CVID_Tabla>> response) {
+            public void onResponse(Call<List<Recipes>> call, Response<List<Recipes>> response) {
                 if (response.isSuccessful()) {
-                    List<CVID_Tabla> table = response.body();
+                    List<Recipes> table = response.body();
                     TablaListViewAdapter adapter = new TablaListViewAdapter(getApplicationContext(), table);
                     imgCargando.setVisibility(View.GONE);
                     lstTabla.setVisibility(View.VISIBLE);
@@ -57,7 +57,7 @@ public class SavedActivity extends AppCompatActivity {
             }
 
             @Override
-            public void onFailure(Call<List<CVID_Tabla>> call, Throwable t) {
+            public void onFailure(Call<List<Recipes>> call, Throwable t) {
 
             }
         });

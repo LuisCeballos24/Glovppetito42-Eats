@@ -9,7 +9,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import gg.glovpptetio42.R;
+import gg.glovpptetio42.api.ApiService;
+import gg.glovpptetio42.api.request.AddRecipes;
+import gg.glovpptetio42.components.auth.LoginActivity;
+import gg.glovpptetio42.data.UserDataValues;
 import gg.glovpptetio42.menu.MenuActivity;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class AddRecipesActivity extends AppCompatActivity {
 
@@ -38,7 +45,31 @@ public class AddRecipesActivity extends AppCompatActivity {
         String ing1 = txt_Ingrediente1.getText().toString();
         String ing2 = txt_Ingrediente2.getText().toString();
         String ing3 = txt_Ingrediente3.getText().toString();
+
         String preparacion = txtpreparacion.getText().toString();
+        AddRecipes receta = new AddRecipes();
+        receta.setIngredientes(ing1+" "+ing2+" "+ing3);
+        receta.setPreparacion(preparacion);
+        receta.setProducto(nombre_recipe);
+
+        Call<Integer> responses = ApiService.getApiService().postRanking2(receta);
+        responses.enqueue(new Callback<Integer>() {
+            @Override
+            public void onResponse(Call<Integer> call, Response<Integer> response) {
+                if (response.isSuccessful()) {
+                    Toast.makeText(getApplicationContext(), "Receta Creada Exitosamente", Toast.LENGTH_LONG).show();
+                    int x = 1;
+                } else {
+                    int x = 1;
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Integer> call, Throwable t) {
+                Toast.makeText(getApplicationContext(), "Reseta Exitosa", Toast.LENGTH_LONG).show();
+                int x = 1;
+            }
+        });
     }
     public void Volver (View v)
     {

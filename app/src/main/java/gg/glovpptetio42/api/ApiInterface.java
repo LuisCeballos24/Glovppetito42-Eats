@@ -2,10 +2,11 @@ package gg.glovpptetio42.api;
 
 import java.util.List;
 
+import gg.glovpptetio42.api.request.AddRecipes;
 import gg.glovpptetio42.api.request.RankingPodioRequest;
 import gg.glovpptetio42.api.request.RequestGame;
 import gg.glovpptetio42.api.request.RequestUser;
-import gg.glovpptetio42.api.response.CVID_Tabla;
+import gg.glovpptetio42.api.response.Recipes;
 import gg.glovpptetio42.api.response.IdResponse;
 import gg.glovpptetio42.api.response.PairsResponse;
 import gg.glovpptetio42.api.response.UserResponse;
@@ -34,7 +35,7 @@ public interface ApiInterface {
     Call<List<PairsResponse>> getPairsList();
 
     @GET("datos_usuarios")
-    Call<List<CVID_Tabla>> getPuntaje();
+    Call<List<Recipes>> getPuntaje();
 
     @GET("mostrarUser")
     Call<UserResponse> getUserDataById(@Body Integer userId);
@@ -43,10 +44,10 @@ public interface ApiInterface {
     Call<List<UserResponse>> getDataUser();
 
     @GET("receta")
-    Call<List<CVID_Tabla>> getRanking();
+    Call<List<Recipes>> getRanking();
 
-    @GET("ranking2")
-    Call<List<CVID_Tabla>> getRanking2();
+    @POST("receta")
+    Call<Integer> postRanking2(@Body AddRecipes estudiante);
 
     @GET("datos_usuarios3")
     Call<List<RankingPodioRequest>> getParticipantes();

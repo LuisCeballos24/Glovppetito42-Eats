@@ -1,9 +1,7 @@
 package gg.glovpptetio42.components.recipe;
 
-import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,58 +11,47 @@ import java.util.List;
 import gg.glovpptetio42.R;
 import gg.glovpptetio42.adapters.TablaListViewAdapter;
 import gg.glovpptetio42.api.ApiService;
-import gg.glovpptetio42.api.response.CVID_Tabla;
+import gg.glovpptetio42.api.response.Recipes;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class IngredientsActivity extends AppCompatActivity {
 
-    ListView lstTabla;
+    ListView lstRecetas;
     int tipo;
-
-    ImageView imgCargando;
-    AnimationDrawable animationDrawable;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaranking);
-
-        imgCargando = findViewById(R.id.imgCargando);
-        imgCargando.setBackgroundResource(R.drawable.cargando);
-        imgCargando.setVisibility(View.VISIBLE);
-
-        animationDrawable = (AnimationDrawable) imgCargando.getBackground();
-        animationDrawable.start();
+        setContentView(R.layout.activity_recetas_principal);
 
         InicializarControles();
         LoadListView(0);
     }
 
     private void LoadListView(int n) {
-        Call<List<CVID_Tabla>> response = ApiService.getApiService().getRanking();
-        response.enqueue(new Callback<List<CVID_Tabla>>() {
+        Call<List<Recipes>> response = ApiService.getApiService().getRanking();
+        response.enqueue(new Callback<List<Recipes>>() {
             @Override
-            public void onResponse(Call<List<CVID_Tabla>> call, Response<List<CVID_Tabla>> response) {
+            public void onResponse(Call<List<Recipes>> call, Response<List<Recipes>> response) {
                 if (response.isSuccessful()) {
-                    List<CVID_Tabla> table = response.body();
+                    List<Recipes> table = response.body();
                     TablaListViewAdapter adapter = new TablaListViewAdapter(getApplicationContext(), table);
-                    imgCargando.setVisibility(View.GONE);
-                    lstTabla.setVisibility(View.VISIBLE);
-                    lstTabla.setAdapter(adapter);
+                    lstRecetas.setVisibility(View.VISIBLE);
+                    lstRecetas.setAdapter(adapter);
                 }
             }
 
             @Override
-            public void onFailure(Call<List<CVID_Tabla>> call, Throwable t) {
+            public void onFailure(Call<List<Recipes>> call, Throwable t) {
 
             }
         });
     }
 
     private void InicializarControles() {
-        lstTabla = findViewById(R.id.lstTabla);
+        lstRecetas = findViewById(R.id.lstRecetas);
     }
 
     public void General(View v) {

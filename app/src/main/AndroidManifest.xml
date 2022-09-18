@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".MainRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name=".SavedActivity"
             android:exported="false" />
         <activity

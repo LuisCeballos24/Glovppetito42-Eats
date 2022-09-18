@@ -1,14 +1,10 @@
-package gg.glovpptetio42.api.response;
+package gg.glovpptetio42.api.request;
 
-public class CVID_Tabla {
+public class AddRecipes {
     private String receta_id;
     private String producto;
     private String ingredientes;
     private String preparacion;
-
-    public String getProducto() {
-        return producto;
-    }
 
     public String getReceta_id() {
         return receta_id;
@@ -16,6 +12,10 @@ public class CVID_Tabla {
 
     public void setReceta_id(String receta_id) {
         this.receta_id = receta_id;
+    }
+
+    public String getProducto() {
+        return producto;
     }
 
     public void setProducto(String producto) {

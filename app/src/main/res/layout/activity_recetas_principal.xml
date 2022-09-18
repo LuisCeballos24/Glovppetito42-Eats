@@ -45,41 +45,22 @@
             android:textColor="@color/azul"
             android:textSize="25dp"
             android:textStyle="bold" />
+        <Button
+            android:layout_width="55dp"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:background="@android:drawable/ic_input_add"></Button>
     </GridLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:gravity="center"
-        android:orientation="horizontal">
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imgCargando"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="50dp" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <ListView
-        android:id="@+id/lstTabla"
+        android:id="@+id/lstRecetas"
         android:layout_width="match_parent"
         android:layout_height="300dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:visibility="gone" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal">
-
-    </LinearLayout>
+</LinearLayout>
 </LinearLayout>
