@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/naranja"
     android:orientation="vertical"
     android:padding="20dp"
     tools:context=".components.auth.LoginActivity">
@@ -12,7 +12,7 @@
         android:layout_width="190dp"
         android:layout_height="190dp"
         android:layout_gravity="center"
-        android:src="@drawable/logo" />
+        android:src="@drawable/globo" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginBottom="15dp"
-            android:background="@color/yellow"
+            android:background="@color/naranjaedit"
             android:drawableStart="@drawable/emailcustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
@@ -73,7 +73,7 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/yellow"
+            android:background="@color/naranjaedit"
             android:drawableStart="@drawable/candadocustom"
             android:drawablePadding="12dp"
             android:fontFamily="@font/m"
@@ -88,7 +88,7 @@
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="25dp"
-            android:background="@color/azul"
+            android:background="@color/teal_700"
             android:fontFamily="@font/ralebo"
             android:onClick="performUserLogin"
             android:text="Login" />

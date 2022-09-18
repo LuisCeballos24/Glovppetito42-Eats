@@ -11,9 +11,9 @@
     <color name="azul">#00358F</color>
 
     //////////perzonalisados
-    <color name="Morado">#9E5CE3</color>
-    <color name="MoradoFondo">#23183a</color>
-    <color name="MoradoInput">#492F7E</color>
-    <color name="error">#e01072</color>
+    <color name="error">#CC3636</color>
+    <color name="naranja">#FFAE6D</color>
+    <color name="naranjainput">#F9B248</color>
+    <color name="naranjaedit">#E14D2A</color>
 
 </resources>
