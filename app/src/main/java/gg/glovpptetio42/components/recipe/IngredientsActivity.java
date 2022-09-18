@@ -26,6 +26,13 @@ public class IngredientsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recetas_principal);
 
+        imgCargando = findViewById(R.id.imgCargando);
+        imgCargando.setBackgroundResource(R.drawable.cargando);
+        imgCargando.setVisibility(View.VISIBLE);
+
+        animationDrawable = (AnimationDrawable) imgCargando.getBackground();
+        animationDrawable.start();
+
         InicializarControles();
         LoadListView(0);
     }
