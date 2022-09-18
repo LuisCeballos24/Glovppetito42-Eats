@@ -18,6 +18,7 @@ public class TablaListViewAdapter extends ArrayAdapter<Recipes> {
 
     //static int y=0;
     //int x=0;
+
     public TablaListViewAdapter(Context context, List<Recipes> datos){
         super(context, R.layout.listview_pranking,datos);
         tabla = datos;
@@ -26,7 +27,7 @@ public class TablaListViewAdapter extends ArrayAdapter<Recipes> {
 
     public View getView(int position, View v, ViewGroup vg){
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        View item = inflater.inflate(R.layout.listview_comida, null);
+        View item = inflater.inflate(R.layout.listview_pranking, null);
 /*
         y=y+1;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/naranja"
+    android:background="@color/black"
     tools:context=".menu.MenuActivity">
     <TextView
         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
         android:layout_below="@id/imagen"
         android:text="recetas guardadas"
         android:onClick="menuPrincipal"
-        app:background="@color/naranjainput"
+        app:backgroundTint="#F9B248"
         android:layout_marginTop="10dp"
         android:paddingVertical="15dp"/>
     <Button
@@ -41,7 +41,7 @@
         android:id="@+id/agregar_r"
         android:text="agregar recetas"
         android:onClick="menuPrincipal"
-        app:backgroundTint="@color/naranjainput"
+        app:backgroundTint="#F9B248"
         android:layout_below="@id/recetas_d"
         android:paddingVertical="15dp"/>
     <Button
@@ -50,7 +50,7 @@
         android:id="@+id/guardados"
         android:text="ver recetas guardadas"
         android:onClick="menuPrincipal"
-        app:backgroundTint="@color/naranjainput"
+        app:backgroundTint="#F9B248"
         android:layout_below="@id/agregar_r"
         android:paddingVertical="15dp"/>
     <Button
@@ -60,7 +60,7 @@
         android:onClick="menuPrincipal"
         android:text="añadir usuario"
         android:id="@+id/anadir"
-        app:backgroundTint="@color/naranjainput"
+        app:backgroundTint="#F9B248"
         android:paddingVertical="15dp"/>
 
 </RelativeLayout>
