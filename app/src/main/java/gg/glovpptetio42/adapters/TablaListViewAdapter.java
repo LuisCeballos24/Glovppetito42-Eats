@@ -20,14 +20,14 @@ public class TablaListViewAdapter extends ArrayAdapter<CVID_Tabla> {
     //int x=0;
 
     public TablaListViewAdapter(Context context, List<CVID_Tabla> datos){
-        super(context, R.layout.listview_pranking,datos);
+        super(context, R.layout.listview_comida,datos);
         tabla = datos;
         //y=0;
     }
 
     public View getView(int position, View v, ViewGroup vg){
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        View item = inflater.inflate(R.layout.listview_pranking, null);
+        View item = inflater.inflate(R.layout.listview_comida, null);
 /*
         y=y+1;
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/yellow"
+    android:background="@color/naranja"
     android:orientation="vertical"
     tools:context=".components.recipe.IngredientsActivity">
 
@@ -14,10 +14,10 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:background="@drawable/rounded_item"
-        android:backgroundTint="#062132"
+        android:backgroundTint="@color/yellow"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo"
+        android:src="@drawable/globo"
         app:cornerRadius="20dp"
         app:strokeColor="@color/white" />
 
@@ -55,8 +55,7 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:gravity="center"
-        android:orientation="horizontal">
-    </LinearLayout>
+        android:orientation="horizontal"></LinearLayout>
 
     <ImageView
         android:id="@+id/imgCargando"

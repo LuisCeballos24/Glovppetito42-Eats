@@ -29,7 +29,7 @@ public class IngredientsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantallaranking);
+        setContentView(R.layout.activity_recetario);
 
         imgCargando = findViewById(R.id.imgCargando);
         imgCargando.setBackgroundResource(R.drawable.cargando);
