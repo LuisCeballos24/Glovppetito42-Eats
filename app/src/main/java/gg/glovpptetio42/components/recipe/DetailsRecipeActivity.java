@@ -56,7 +56,6 @@ public class DetailsRecipeActivity extends AppCompatActivity {
         bttnEli = (Button)findViewById(R.id.bttnEliminar);
         lstdetallada = (ListView)findViewById(R.id.lstRecetaDetallada);
         RecipeListViewAdapter adaptador = new RecipeListViewAdapter(getApplicationContext(), Obtener_Detallada());
-        lstdetallada.setAdapter(adaptador);
     }
 
     public List<Recipes> Obtener_Detallada()

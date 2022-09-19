@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import gg.glovpptetio42.R;
@@ -30,9 +32,8 @@ public class IngredientsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recetas_principal);
-
-        InicializarControles();
         LoadListView(0);
+        InicializarControles();
     }
 
     private void LoadListView(int n) {
@@ -41,38 +42,35 @@ public class IngredientsActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<List<Recipes>> call, Response<List<Recipes>> response) {
                 if (response.isSuccessful()) {
-                    List<Recipes> table = response.body();
-                    RecipeListViewAdapter adapter = new RecipeListViewAdapter(getApplicationContext(), table);
+                    List<Recipes> Recipes = response.body();
+                    RecipeListViewAdapter adapter =new RecipeListViewAdapter(getApplicationContext(), Recipes);
                     lstRecetas.setVisibility(View.VISIBLE);
                     lstRecetas.setAdapter(adapter);
                     lstRecetas.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             Toast.makeText(getApplicationContext(),"Ha seleccionado "+adapter.getItemId(position),Toast.LENGTH_LONG).show();
+
                             Intent idetalle = new Intent(getApplicationContext(),DetailsRecipeActivity.class);
-                            posicion = (int)adapter.getItemId(position);
+                            int posicion = (int)adapter.getItemId(position);
                             tipo = idetalle.getIntExtra("Tipo",0);
                             idetalle.putExtra("idReceta",posicion);
-                            idetalle.putExtra("Tipo",tipo);
                             startActivity(idetalle);
                         }
                     });
                 }
             }
-
             @Override
             public void onFailure(Call<List<Recipes>> call, Throwable t) {
 
             }
+
         });
-    }
-
-    private void eliminar_receta(View v){
-
     }
 
     private void InicializarControles() {
         lstRecetas = findViewById(R.id.lstRecetas);
     }
+
 
 }
