@@ -13,7 +13,9 @@ import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.DELETE;
 import retrofit2.http.GET;
+import retrofit2.http.PATCH;
 import retrofit2.http.POST;
+import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
 public interface ApiInterface {
@@ -31,17 +33,19 @@ public interface ApiInterface {
     Call<List<Recipes>> getRecipe();
 
     @GET("receta/{id}")
-    Call<List<AddRecipes>> getRecipeId( @Path("id") AddRecipes recipes);
+    Call<List<FavRecipes>> getRecipeId(@Path("id") int recipes);
+    @GET("receta/{id}")
+    Call<List<AddRecipes>> getRecipeId2(@Path("id") int recipes);
 
     @GET("guardado")
     Call<List<FavRecipes>> getFavRecipe();
 
     @POST("guardado")
-    Call<List<FavRecipes>> postFavRecipe(@Body FavRecipes guardado);
+    Call<Integer> postAddFav(@Body FavRecipes favRecipes);
 
     @POST("receta")
     Call<Integer> postRecipe(@Body AddRecipes recipe);
 
     @DELETE("receta/{id}")
-    Call<IdResponse> deleteRecipe(@Path("id") Recipes recipes);
+    Call<Integer> deleteRecipe(@Path("id") int deleteRecipes);
 }

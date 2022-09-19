@@ -30,7 +30,7 @@ public class FavRecipeListViewAdapter extends ArrayAdapter<FavRecipes> {
         View item = inflater.inflate(R.layout.favoritas_template, null);
 
         TextView producto = (TextView)item.findViewById(R.id.txtnombreReceta);
-        producto.setText(tabla.get(position).getProducto());
+        producto.setText((CharSequence) tabla.get(position).getProducto());
 
         return item;
     }

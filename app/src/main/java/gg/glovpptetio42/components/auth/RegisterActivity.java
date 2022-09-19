@@ -32,20 +32,10 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registrar);
 
-        click = MediaPlayer.create(this, R.raw.click);
-        music = MediaPlayer.create(this, R.raw.menumusic);
-        music.start();
-
         i = getIntent();
         x = i.getIntExtra("num", 0);
 
         initializeControllers();
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
-        music.start();
     }
 
     private void initializeControllers() {
@@ -61,10 +51,10 @@ public class RegisterActivity extends AppCompatActivity {
     public void registerUser(View v) {
         try {
             if (r1.isChecked()==true) {
-                tipo=1;
+                tipo=2;
             } else
             if (r2.isChecked()==true) {
-                tipo=2;
+                tipo=1;
             }
             UserDataValues estudiante = new UserDataValues();
             estudiante.setNombre(nombre.getText().toString());
@@ -132,13 +122,6 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void goBack(View view) {
-        click.start();
         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-    }
-
-    @Override
-    protected void onPause() {
-        super.onPause();
-        music.pause();
     }
 }

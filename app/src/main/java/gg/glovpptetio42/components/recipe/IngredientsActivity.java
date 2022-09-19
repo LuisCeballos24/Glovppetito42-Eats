@@ -18,6 +18,7 @@ import gg.glovpptetio42.adapters.RecipeListViewAdapter;
 import gg.glovpptetio42.api.ApiService;
 import gg.glovpptetio42.api.request.FavRecipes;
 import gg.glovpptetio42.api.request.Recipes;
+import gg.glovpptetio42.api.response.UserResponse;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -25,12 +26,12 @@ import retrofit2.Response;
 public class IngredientsActivity extends AppCompatActivity {
 
     ListView lstRecetas;
-    int posicion;
     int tipo;
-
+    Intent i = new Intent();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        tipo = getIntent().getIntExtra("Tipo",0);
         setContentView(R.layout.activity_recetas_principal);
         LoadListView(0);
         InicializarControles();
@@ -50,11 +51,11 @@ public class IngredientsActivity extends AppCompatActivity {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             Toast.makeText(getApplicationContext(),"Ha seleccionado "+adapter.getItemId(position),Toast.LENGTH_LONG).show();
-
                             Intent idetalle = new Intent(getApplicationContext(),DetailsRecipeActivity.class);
                             int posicion = (int)adapter.getItemId(position);
-                            tipo = idetalle.getIntExtra("Tipo",0);
-                            idetalle.putExtra("idReceta",posicion);
+                            UserResponse e=new UserResponse();
+                            idetalle.putExtra("tipo",tipo);
+                            idetalle.putExtra("idReceta",posicion+1);
                             startActivity(idetalle);
                         }
                     });
@@ -70,6 +71,7 @@ public class IngredientsActivity extends AppCompatActivity {
 
     private void InicializarControles() {
         lstRecetas = findViewById(R.id.lstRecetas);
+
     }
 
 

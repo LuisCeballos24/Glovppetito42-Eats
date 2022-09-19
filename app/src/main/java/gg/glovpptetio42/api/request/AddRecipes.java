@@ -1,17 +1,18 @@
 package gg.glovpptetio42.api.request;
 
 public class AddRecipes {
-    private String receta_id;
+    private int id;
+    private int usuario_id;
     private String producto;
     private String ingredientes;
     private String preparacion;
 
-    public String getReceta_id() {
-        return receta_id;
+    public int getReceta_id() {
+        return id;
     }
 
-    public void setReceta_id(String receta_id) {
-        this.receta_id = receta_id;
+    public void setReceta_id(int receta_id) {
+        this.id = receta_id;
     }
 
     public String getProducto() {

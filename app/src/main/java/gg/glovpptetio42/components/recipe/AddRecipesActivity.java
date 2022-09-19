@@ -76,9 +76,4 @@ public class AddRecipesActivity extends AppCompatActivity {
             }
         });
     }
-    public void Volver (View v)
-    {
-        Intent i = new Intent(getApplicationContext(), MenuActivity.class);
-        startActivity(i);
-    }
 }

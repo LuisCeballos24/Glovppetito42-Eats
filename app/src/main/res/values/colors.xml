@@ -15,5 +15,7 @@
     <color name="naranjaFondo">#FFBC80</color>
     <color name="naranjaInput">#FF9F45</color>
     <color name="error">#FC4F4F</color>
+    <color name="MoradoInput">#774CC9</color>
+    <color name="Morado">#5623B3</color>
 
 </resources>

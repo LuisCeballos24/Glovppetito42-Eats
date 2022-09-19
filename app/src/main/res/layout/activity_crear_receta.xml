@@ -121,12 +121,6 @@
             android:layout_height="wrap_content"
             android:text="Añadir receta"/>
 
-        <Button
-            android:onClick="Volver"
-            android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Volver"/>
 
     </LinearLayout>
 </LinearLayout>

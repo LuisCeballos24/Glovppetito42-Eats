@@ -26,6 +26,8 @@ public class MenuActivity extends AppCompatActivity {
         anadir=(Button) findViewById(R.id.anadir);
         Verificar_Botones();
     }
+
+
     private void Verificar_Botones()
     {
         Intent i = getIntent();
