@@ -51,7 +51,9 @@ public class IngredientsActivity extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(),"Ha seleccionado "+adapter.getItemId(position),Toast.LENGTH_LONG).show();
                             Intent idetalle = new Intent(getApplicationContext(),DetailsRecipeActivity.class);
                             posicion = (int)adapter.getItemId(position);
+                            tipo = idetalle.getIntExtra("Tipo",0);
                             idetalle.putExtra("idReceta",posicion);
+                            idetalle.putExtra("Tipo",tipo);
                             startActivity(idetalle);
                         }
                     });

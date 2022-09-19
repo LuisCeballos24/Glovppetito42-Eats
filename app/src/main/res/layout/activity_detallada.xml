@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Añadir a Favoritos"
-        android:onClick="Anadir_Fav"
+        android:onClick="anadir_Fav"
         android:visibility="invisible"/>
 
     <Button
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Eliminar Receta"
-        android:onClick="Eliminar_Rece"
+        android:onClick="eliminar_Rece"
         android:visibility="invisible"
         />
 

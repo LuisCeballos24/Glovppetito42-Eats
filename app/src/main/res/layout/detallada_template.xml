@@ -25,36 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
-                android:text="Prueba 1"
                 android:id="@+id/txtIng1"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Prueba 1"
-                android:id="@+id/txtIng2"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Prueba 1"
-                android:id="@+id/txtIng3"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Prueba 1"
-                android:id="@+id/txtIng4"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:text="Prueba 1"
-                android:id="@+id/txtIng5"/>
 
         </LinearLayout>
 
@@ -70,7 +41,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtnombreReceta"
             android:layout_marginTop="40dp"
-            android:text="La Among Us"
             android:textStyle="bold"
             android:textSize="40dp"/>
 
@@ -78,7 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="20dp"
-            android:text="Se sofrie chucha"
             android:id="@+id/txtprepa"/>
 
     </LinearLayout>

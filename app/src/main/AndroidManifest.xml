@@ -31,7 +31,6 @@
             </intent-filter>
                  
         </activity>
-        <activity android:name="gg.glovpptetio42.components.auth.AuthMessageActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.RegisterActivity" />
         <activity android:name="gg.glovpptetio42.components.auth.PasswordRecoveryActivity" />
         <activity android:name=".components.recipe.IngredientsActivity" />

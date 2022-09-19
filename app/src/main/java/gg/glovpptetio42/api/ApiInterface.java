@@ -30,6 +30,9 @@ public interface ApiInterface {
     @GET("receta")
     Call<List<Recipes>> getRecipe();
 
+    @GET("receta/{id}")
+    Call<List<AddRecipes>> getRecipeId( @Path("id") AddRecipes recipes);
+
     @GET("guardado")
     Call<List<FavRecipes>> getFavRecipe();
 

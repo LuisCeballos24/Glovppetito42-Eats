@@ -17,7 +17,7 @@
         android:backgroundTint="#062132"
         android:padding="10dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo"
+        android:src="@drawable/hamgurguesa"
         app:cornerRadius="20dp"
         app:strokeColor="@color/white" />
 

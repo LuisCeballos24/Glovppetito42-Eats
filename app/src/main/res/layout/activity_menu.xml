@@ -23,7 +23,7 @@
         android:id="@+id/imagen"
         android:layout_below="@id/titulo"
 
-        android:src="@drawable/globo" />
+        android:src="@drawable/hamgurguesa" />
 
     <Button
         android:layout_width="match_parent"
@@ -41,6 +41,7 @@
         android:id="@+id/agregar_r"
         android:text="agregar recetas"
         android:onClick="menuPrincipal"
+        android:visibility="invisible"
         app:backgroundTint="#F9B248"
         android:layout_below="@id/recetas_d"
         android:paddingVertical="15dp"/>
@@ -59,6 +60,7 @@
         android:layout_below="@id/guardados"
         android:onClick="menuPrincipal"
         android:text="añadir usuario"
+        android:visibility="invisible"
         android:id="@+id/anadir"
         app:backgroundTint="#F9B248"
         android:paddingVertical="15dp"/>
