@@ -30,7 +30,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/recetas_d"
         android:layout_below="@id/imagen"
-        android:text="recetas guardadas"
+        android:text="recetas Creadas"
         android:onClick="menuPrincipal"
         app:backgroundTint="@color/naranjaInput"
         android:layout_marginTop="10dp"
