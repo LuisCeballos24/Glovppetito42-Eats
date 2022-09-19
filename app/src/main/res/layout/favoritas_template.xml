@@ -13,14 +13,13 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:id="@+id/ivimgReceta"
-            android:src="@drawable/head2"/>
+            android:src="@drawable/hamgurguesa"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/txtnombreReceta"
             android:layout_marginTop="40dp"
-            android:text="Among Us"
             android:textSize="20dp"/>
 
         <LinearLayout
@@ -32,16 +31,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="40dp"
-                android:text="¿Realizada?"
+                android:text="Elimina"
                 android:textSize="20dp"/>
 
             <ImageView
                 android:id="@+id/ivImgExitosa"
-                android:layout_width="110dp"
-                android:layout_height="75dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/saludando"/>
+                android:background="@android:drawable/ic_delete"/>
         </LinearLayout>
 
     </LinearLayout>

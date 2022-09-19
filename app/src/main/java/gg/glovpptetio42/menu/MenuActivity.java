@@ -10,6 +10,7 @@ import android.widget.Button;
 import gg.glovpptetio42.R;
 import gg.glovpptetio42.components.auth.RegisterActivity;
 import gg.glovpptetio42.components.recipe.AddRecipesActivity;
+import gg.glovpptetio42.components.recipe.FavRecipeActivity;
 import gg.glovpptetio42.components.recipe.IngredientsActivity;
 
 public class MenuActivity extends AppCompatActivity {
@@ -35,6 +36,8 @@ public class MenuActivity extends AppCompatActivity {
 
                 break;
             case R.id.guardados:
+                Intent c = new Intent(getApplicationContext(), FavRecipeActivity.class);
+                startActivity(c);
                 break;
             case R.id.anadir:Intent b = new Intent(getApplicationContext(), RegisterActivity.class);
                              startActivity(b);

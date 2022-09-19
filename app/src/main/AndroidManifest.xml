@@ -13,10 +13,7 @@
         android:theme="@style/Theme.Glovppetito42"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".MainRecipeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SavedActivity"
+            android:name=".components.recipe.FavRecipeActivity"
             android:exported="false" />
         <activity
             android:name=".components.recipe.AddRecipesActivity"

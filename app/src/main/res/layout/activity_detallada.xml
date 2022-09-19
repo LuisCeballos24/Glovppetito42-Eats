@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".components.recipe.DetailsRecipeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#C88E0533"
+            android:textStyle="bold"
+            android:text="RECETA"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="40dp"
+            android:textSize="28dp"
+            android:gravity="center"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstRecetaDetallada"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bttnFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir a Favoritos"
+        android:onClick="Anadir_Fav"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bttnEliminar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar Receta"
+        android:onClick="Eliminar_Rece"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
